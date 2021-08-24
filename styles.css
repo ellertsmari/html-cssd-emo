@@ -1,6 +1,23 @@
 .main_title{
     color: blue;
 }
+
+.main_title2{
+    color: rgb(25,33,78);
+}
+
+.main_title3{
+    color: #f3f3f3;
+}
+
+.main_title4{
+    color: hsl(90, 100, 50);
+}
+
+.main_title5{
+    color: rgba(25,57,89, 0.5);
+}
+
 h1{
     background-color: burlywood;
 }

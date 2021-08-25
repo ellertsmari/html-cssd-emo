@@ -1,27 +1,45 @@
+/* Here we select every tag that has the class "main_title" when we want to select by class in css we start with a . ). 
+We choose the color blue just by writing the color name
+*/
 .main_title{
     color: blue;
 }
-
+/* Again we are using the class selector. Norice that only one element has these classes
+ even though we could add the class to other elements too and they will then receive the styles.
+ Here we are using the rgb method to choose how much of red green and blue is in the color. 
+ This is the way colors work on a computer screen (that is they have different ammount of
+red, green and blue and that way we can create all the colors */
 .main_title2{
     color: rgb(25,33,78);
 }
-
+/* Again a class selector but we use the # to define the color. It works the same as the rgb except it is not as readable
+The first two digits say how much red there should be, the second two digits, how much green and the last two digits 
+you can probably guess yourself (yes it is blue). 
+Each digit can go from 1 to F (representing numbers from 1 to 16). They are called hexadecimal numbers. The reason for
+writing it like that is to express one byte. One byte is 8 bits. One bit can be two values (0 and 1). There fore 8 bits 
+can have 256 different values (2 to the power of 8) but that happens to be exactly the same as 16*16 (two hexadecimal digits)
+Sorry about the nerdism */
 .main_title3{
     color: #f3f3f3;
 }
-
+/* Another class selector but we use hsl to define the color. hsl stands for hue, saturation and lightness. Now this is one is made for
+humans but not for computers and it is easear for us to think that this color might need a bit more saturation, or light. The hue part
+gives different colors based on the color circle. You can play around with it here: https://www.w3schools.com/colors/colors_hsl.asp */
 .main_title4{
     color: hsl(90, 100%, 50%);
 }
-
+/* Yet anotyer class selector. I have created a div with the same class just to show that you can have two elements using the same class.
+This one uses the rgba method that is exactly the same as the rgb method except that it has the alpha channel that allows you to make it transparent
+The alpha channel takes a number between 0 and 1. 0 is totally transparent (it will not show on your page) and 1 is just normal. 
+Notice that the other values (for red green and blue) should be from 0 to 255 so alpha is a bit special in that way */
 .main_title5{
     color: rgba(25,57,89, 0.5);
 }
-
+/* Here we have used the tag name selector. This gives all h1 elements on our page the burlywood color */
 h1{
     background-color: burlywood;
 }
-
+/* Here we use the id selector. Unlike the other selectors only one HTML element can have this style because no two HTML elements should have the same id */
 #greeting{
     margin-top: 200px;
 }
